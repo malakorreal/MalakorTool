@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffeef7;
+  color: #3b2b3f;
+}
+
+/* Title bar */
+.title-bar {
+  height: 42px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffd6ec;
+  -webkit-app-region: drag;
+}
+
+.title-bar button {
+  -webkit-app-region: no-drag;
+  background: transparent;
+  border: none;
+  color: #3b2b3f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Loading */
+#loading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid #ffd6ec;
+  border-top: 4px solid #ff8fb1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* App */
+.hidden { display: none; }
+
+.content {
+  height: calc(100vh - 42px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+}
+
+.buttons {
+  margin: 24px 0;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 2px solid #ffb3cf;
+  cursor: pointer;
+  background: #ff8fb1;
+  color: #3b2b3f;
+  font-weight: 500;
+}
+
+button.secondary {
+  background: #ffe5f2;
+  color: #72586f;
+  border-color: #f7c4dd;
+}
+
+#status {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #72586f;
+}
+
+.credit {
+  margin-top: 12px;
+  color: #ff8fb1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.server-content {
+  height: calc(100vh - 42px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.server-content h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.server-desc {
+  max-width: 520px;
+  color: #72586f;
+  margin-bottom: 24px;
+}
+
+/* Agreement */
+#agreement {
+  height: calc(100vh - 42px);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.agreement-box {
+  max-width: 700px;
+  background: #ffe5f2;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+  color: #3b2b3f;
+}

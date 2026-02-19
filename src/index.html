@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>MalakorTool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loading">
+  <div class="spinner"></div>
+  <p>กําลังโหลด...</p>
+</div>
+
+<div id="server-down" class="hidden">
+  <div class="title-bar">
+    <span>MalakorTool</span>
+    <button id="close-server">✕</button>
+  </div>
+
+  <div class="server-content">
+    <h1>เซิร์ฟเวอร์ออฟไลน์</h1>
+    <p class="server-desc">ไม่สามารถใช้งานแอปได้ในตอนนี้ กรุณาลองใหม่อีกครั้งภายหลัง</p>
+    <button id="retry-server">ลองใหม่อีกครั้ง</button>
+  </div>
+</div>
+
+<!-- App -->
+<div id="app" class="hidden">
+  <div class="title-bar">
+    <span>MalakorTool</span>
+    <button id="close">✕</button>
+  </div>
+
+  <div class="content">
+    <h1>System Optimization</h1>
+    <p class="desc">ปรับแต่งประสิทธิภาพระบบสำหรับการใช้งานและการเล่นเกม อาจจะช่วยน้อยแต่ดีกว่าไม่มี</p>
+
+    <div class="buttons">
+      <button id="on">เปิดใช้งานบูส</button>
+      <button id="off" class="secondary">คืนค่า</button>
+    </div>
+
+    <div id="status"></div>
+
+    <a class="credit" href="https://guns.lol/malakorkubb">Made By Malakor</a>
+  </div>
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>

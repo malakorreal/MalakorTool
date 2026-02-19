@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Agreement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="title-bar">
+  <span>MalakorTool</span>
+  <button onclick="window.malakor.closeApp()">✕</button>
+</div>
+
+<div id="agreement">
+  <h1>ข้อตกลงการใช้งาน</h1>
+
+  <div class="agreement-box">
+    <p>
+      โปรแกรม MalakorTool เป็นเครื่องมือสำหรับปรับแต่งการตั้งค่าระบบ
+      เพื่อเพิ่มความลื่นไหลในการใช้งาน
+    </p>
+    <ul>
+      <li>การเปลี่ยนแปลงสามารถคืนค่าได้ 100%</li>
+      <li>ผู้ใช้ต้องใช้งานด้วยความเข้าใจ</li>
+      <li>แนะนำให้เปิดโปรแกรมด้วยสิทธิ์ Administrator</li>
+      <li>และอยากจะบอกว่านิวหน้าหีมากค่ะ</li>
+    </ul>
+  </div>
+
+  <div class="agreement-actions">
+    <button onclick="window.malakor.acceptAgreement()">ยอมรับข้อตกลง</button>
+    <button class="secondary" onclick="window.malakor.closeApp()">ไม่ยอมรับ</button>
+  </div>
+</div>
+
+</body>
+</html>

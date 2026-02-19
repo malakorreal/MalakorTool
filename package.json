@@ -1,0 +1,46 @@
+{
+  "name": "malakortool",
+  "version": "1.0.0",
+  "description": "Optimization Tool",
+  "main": "main.js",
+  "author": "Malakor",
+  "license": "Malakor",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.malakor.tool",
+    "productName": "MalakorTool",
+    "asar": true,
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "png",
+      "output": "dist"
+    },
+    "win": {
+      "icon": "png/slogo2.ico",
+      "requestedExecutionLevel": "requireAdministrator",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
